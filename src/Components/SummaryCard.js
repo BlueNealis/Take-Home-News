@@ -1,13 +1,16 @@
 import React from 'react'
 import './SummaryCard.css'
+import {Link} from 'react-router-dom'
 
-function SummaryCard({title, imgUrl, date}) {
+function SummaryCard({title, url, date}) {
   return (
+  <Link to='/details'>
     <div className='card'>
-      <img src={imgURL}/>
+      <img className='card-img' src={url} alt='jellyfish'/>
       <h1>{title}</h1>
       <p>{date}</p>
     </div>
+  </Link>
   )
 }
 
