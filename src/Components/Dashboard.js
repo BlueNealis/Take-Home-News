@@ -1,2 +1,10 @@
 import SummaryCard from './SummaryCard'
-import React from 'react'
+import React, { useState } from 'react'
+
+function Dashboard() {
+  const [cards, setCards] = useState([])
+  return(
+    <div>
+    </div>
+  )
+}
