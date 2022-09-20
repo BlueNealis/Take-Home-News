@@ -1,12 +1,12 @@
 import React from 'react'
 import './SummaryCard.css'
 
-function SummaryCard() {
+function SummaryCard({title, imgUrl, date}) {
   return (
-    <div>
-      <img />
-      <h1>Title</h1>
-      <p>Date</p>
+    <div className='card'>
+      <img src={imgURL}/>
+      <h1>{title}</h1>
+      <p>{date}</p>
     </div>
   )
 }

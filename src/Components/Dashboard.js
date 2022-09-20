@@ -5,6 +5,7 @@ function Dashboard() {
   const [cards, setCards] = useState([])
   return(
     <div>
+      <SummaryCard /> 
     </div>
   )
 }
