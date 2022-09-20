@@ -10,3 +10,5 @@ function SummaryCard() {
     </div>
   )
 }
+
+export default SummaryCard
