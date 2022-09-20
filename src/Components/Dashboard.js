@@ -1,9 +1,15 @@
 import SummaryCard from './SummaryCard'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Dashboard.css'
+import grabArticles from '../apiCalls'
 
 function Dashboard() {
   const [cards, setCards] = useState([])
+
+  useEffect(() => {
+  grabArticles().then(data => console.log(data))
+},[])
+
   return(
     <div>
       <select className='filter'>
