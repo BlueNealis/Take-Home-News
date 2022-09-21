@@ -12,6 +12,10 @@ function DetailView({articleInfo}) {
       <div className='article-grab'>
         <h1 className='title'>{articleInfo.title}</h1>
         <p>{articleInfo.abstract}</p>
+        <p>{articleInfo.byline}</p>
+        <a href={articleInfo.url}>
+          <button>Read This Article</button>
+        </a>
       </div>
     </div>
     </>
