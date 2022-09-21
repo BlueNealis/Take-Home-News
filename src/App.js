@@ -3,11 +3,20 @@ import DetailView from './Components/DetailView'
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import React, {useState} from 'react'
+import grabArticles from './apiCalls'
 
 function App() {
   const [detailArticle, setDetailArticle] = useState({})
-  const handleArticleChoice = (e) => {
 
+  const handleArticleChoice = (e) => {
+    grabArticles().then(data => {setDetailArticle(data.results.find((result) => {
+      if(result.title === e.target.id) {
+        console.log(result)
+        return result
+      }
+    }))
+  }
+)
   }
 
   return (
