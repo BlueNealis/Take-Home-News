@@ -12,6 +12,9 @@ img {
 
 a {
   text-decoration: none;
+  color: #241e1e;
+  display:flex;
+  justify-content: center;
 
 }
 
@@ -22,4 +25,11 @@ a:hover {
 .filter {
   width: 10%;
   margin:1%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='wrapper'>
     <h1 className='title'>Top News of Today</h1>
     <Switch>
       <Route exact path='/'>

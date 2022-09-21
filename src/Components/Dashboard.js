@@ -20,14 +20,14 @@ function Dashboard({handleChoice}) {
     handleChoice={handleChoice}
     title={result.title}
     url={result.multimedia[1].url}
-    date={result.created_date} />)
+    date={result.created_date.split('T')[0]} />)
   }))
   setLoading('')
 })
 },[category])
 
   return(
-    <div>
+    <>
       <label>Top News in:</label>
       <select onChange={(e) => setCategory(e.target.value)}className='filter'>
         <option value='world'>World</option>
@@ -36,11 +36,11 @@ function Dashboard({handleChoice}) {
         <option value='home'>Home</option>
         <option value='science'>Science</option>
       </select>
-      <div className='card-container'>
+      <div>
       {loading && <h1>{loading}</h1>}
         {cards}
       </div>
-    </div>
+    </>
   )
 }
 
