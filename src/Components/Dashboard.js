@@ -16,6 +16,7 @@ function Dashboard({handleChoice}) {
         return
       }
     return (<SummaryCard key={result.title}
+      category={category}
     handleChoice={handleChoice}
     title={result.title}
     url={result.multimedia[1].url}

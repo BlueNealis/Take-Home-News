@@ -8,8 +8,8 @@ import grabArticles from './apiCalls'
 function App() {
   const [detailArticle, setDetailArticle] = useState({})
 
-  const handleArticleChoice = (e) => {
-    grabArticles().then(data => {setDetailArticle(data.results.find((result) => {
+  const handleArticleChoice = (e, category) => {
+    grabArticles(category).then(data => {setDetailArticle(data.results.find((result) => {
       if(result.title === e.target.id) {
         return result
       }

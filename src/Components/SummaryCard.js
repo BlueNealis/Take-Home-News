@@ -2,10 +2,10 @@ import React from 'react'
 import './SummaryCard.css'
 import {Link} from 'react-router-dom'
 
-function SummaryCard({handleChoice, title, url, date}) {
+function SummaryCard({handleChoice, title, url, date, category}) {
   return (
   <Link to={`/details/${title}`}>
-    <div onClick={handleChoice} id={title} className='card'>
+    <div onClick={(e) => handleChoice(e, category)} id={title} className='card'>
       <img id={title} className='card-img' src={url} alt='jellyfish'/>
       <h1 id={title}>{title}</h1>
       <p id={title}>{date}</p>
