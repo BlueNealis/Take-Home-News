@@ -27,7 +27,7 @@ function App() {
         <Dashboard handleChoice={handleArticleChoice}/>
       </Route>
       <Route path='/detail/:title'>
-        <DetailView />
+        <DetailView articleInfo={detailArticle}/>
       </Route>
     </Switch>
     </div>
