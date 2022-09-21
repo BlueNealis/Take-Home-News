@@ -31,7 +31,6 @@ function Dashboard({handleChoice}) {
         <option value='arts'>Arts</option>
         <option value='home'>Home</option>
         <option value='science'>Science</option>
-        <option>All Categories</option>
       </select>
       <div className='card-container'>
         {cards}
