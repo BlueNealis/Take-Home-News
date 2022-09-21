@@ -26,7 +26,7 @@ function App() {
       <Route exact path='/'>
         <Dashboard handleChoice={handleArticleChoice}/>
       </Route>
-      <Route path='/detail/:title'>
+      <Route path={`/details/${detailArticle.title}`}>
         <DetailView articleInfo={detailArticle}/>
       </Route>
     </Switch>
