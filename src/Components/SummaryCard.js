@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function SummaryCard({title, url, date}) {
   return (
-  <Link to={`/details?title=${title}`}>
+  <Link to={`/details/${title}`}>
     <div className='card'>
       <img className='card-img' src={url} alt='jellyfish'/>
       <h1>{title}</h1>
