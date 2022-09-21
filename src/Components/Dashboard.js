@@ -5,9 +5,10 @@ import grabArticles from '../apiCalls'
 
 function Dashboard({handleChoice}) {
   const [cards, setCards] = useState([])
+  const [category, setCategory] = useState('world')
 
   useEffect(() => {
-    grabArticles().then(data => {setCards(data.results.map((result) => {
+    grabArticles(category).then(data => {setCards(data.results.map((result) => {
     return (<SummaryCard key={result.title}
     handleChoice={handleChoice}
     title={result.title}
@@ -15,7 +16,7 @@ function Dashboard({handleChoice}) {
     date={result.created_date} />)
   }))
 })
-  },[])
+},[category])
 
   return(
     <div>
