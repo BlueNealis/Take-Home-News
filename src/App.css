@@ -17,6 +17,7 @@ img {
 
 a {
   text-decoration: none;
+  font-weight:normal;
   color: #241e1e;
   font-size: 1.2rem;
   display:flex;
@@ -43,4 +44,5 @@ a:hover {
 .main-title {
   font-size: 3rem;
   color: #524f44;
+  font-weight: bold;
 }

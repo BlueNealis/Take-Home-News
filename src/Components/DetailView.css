@@ -19,4 +19,7 @@
 
 .article-container {
   display: flex;
+  background-color: #e9f3f7;
+  width: 92%;
+  padding: 2%;
 }
