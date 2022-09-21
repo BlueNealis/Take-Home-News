@@ -5,3 +5,15 @@
 .title {
   margin-left: 1%;
 }
+
+.article-grab {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.redirect-main {
+  font-size: 1rem;
+  padding: 1%;
+  margin-right: 75%;
+}
