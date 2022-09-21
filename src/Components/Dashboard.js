@@ -5,10 +5,12 @@ import grabArticles from '../apiCalls'
 
 function Dashboard({handleChoice}) {
   const [cards, setCards] = useState([])
+  const [loading, setLoading] = useState('')
   const [category, setCategory] = useState('world')
 
   useEffect(() => {
     setCards([])
+    setLoading('Loading.....')
     grabArticles(category).then(data => {setCards(data.results.map((result) => {
       if(!result.title){
         return
@@ -19,6 +21,7 @@ function Dashboard({handleChoice}) {
     url={result.multimedia[1].url}
     date={result.created_date} />)
   }))
+  setLoading('')
 })
 },[category])
 
@@ -33,6 +36,7 @@ function Dashboard({handleChoice}) {
         <option value='science'>Science</option>
       </select>
       <div className='card-container'>
+      {loading && <h1>{loading}</h1>}
         {cards}
       </div>
     </div>
