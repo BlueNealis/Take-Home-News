@@ -1,11 +1,13 @@
 import React from 'react'
 import Route from 'react-router-dom'
+import './DetailView.css'
 
 function DetailView({articleInfo}) {
-  console.log('this is rendering', articleInfo)
+  console.log(articleInfo)
   return(
-    <div>
-      <h1>{articleInfo.title}</h1>
+    <div className='article-container'>
+      <img src={articleInfo.multimedia[1].url} alt={articleInfo.multimedia[1].caption}/>
+      <h1 className='title'>{articleInfo.title}</h1>
     </div>
   )
 }

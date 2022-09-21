@@ -1,0 +1,7 @@
+.article-container {
+  display: flex;
+}
+
+.title {
+  margin-left: 1%;
+}
