@@ -8,7 +8,7 @@ function SummaryCard({handleChoice, title, url, date, category}) {
   <Link to={`/details/${title}`}>
     <div onClick={(e) => handleChoice(e, category)} id={title} className='card'>
       <img id={title} className='card-img' src={url} alt='jellyfish'/>
-      <h1 id={title}>{title}</h1>
+      <h1 className='title' id={title}>{title}</h1>
       <p id={title}>Created: {date}</p>
     </div>
   </Link>

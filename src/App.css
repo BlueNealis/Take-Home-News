@@ -13,6 +13,7 @@ img {
 a {
   text-decoration: none;
   color: #241e1e;
+  font-size: 1.2rem;
   display:flex;
   justify-content: center;
 
