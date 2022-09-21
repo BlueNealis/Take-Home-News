@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './DetailView.css'
 function DetailView({articleInfo}) {
-  console.log(articleInfo)
   return(<>
     <Link to='/'>
       <h1 className='redirect-main'>Back To Main</h1>

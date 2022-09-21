@@ -11,12 +11,10 @@ function App() {
   const handleArticleChoice = (e) => {
     grabArticles().then(data => {setDetailArticle(data.results.find((result) => {
       if(result.title === e.target.id) {
-        console.log(result)
         return result
       }
     }))
-  }
-)
+  })
   }
 
   return (
