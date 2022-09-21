@@ -4,6 +4,11 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
+  background-color: #e3decc;
+}
+
+body {
+    font-family: 'Newsreader', serif;
 }
 
 img {
@@ -33,4 +38,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #524f44;
 }

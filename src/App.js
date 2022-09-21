@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className='wrapper'>
-    <h1 className='title'>Top News of Today</h1>
+    <h1 className='main-title'>Top News of Today</h1>
     <Switch>
       <Route exact path='/'>
         <Dashboard handleChoice={handleArticleChoice}/>
