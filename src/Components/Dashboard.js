@@ -8,7 +8,11 @@ function Dashboard({handleChoice}) {
   const [category, setCategory] = useState('world')
 
   useEffect(() => {
+    setCards([])
     grabArticles(category).then(data => {setCards(data.results.map((result) => {
+      if(!result.title){
+        return
+      }
     return (<SummaryCard key={result.title}
     handleChoice={handleChoice}
     title={result.title}
@@ -21,12 +25,12 @@ function Dashboard({handleChoice}) {
   return(
     <div>
       <label>Top News in:</label>
-      <select className='filter'>
-        <option>World</option>
-        <option>United States</option>
-        <option>Arts</option>
-        <option>Home</option>
-        <option>Science</option>
+      <select onChange={(e) => setCategory(e.target.value)}className='filter'>
+        <option value='world'>World</option>
+        <option value='us'>United States</option>
+        <option value='arts'>Arts</option>
+        <option value='home'>Home</option>
+        <option value='science'>Science</option>
         <option>All Categories</option>
       </select>
       <div className='card-container'>
