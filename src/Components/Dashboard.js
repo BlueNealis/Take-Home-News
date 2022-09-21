@@ -19,8 +19,14 @@ function Dashboard({handleChoice}) {
 
   return(
     <div>
+      <label>Top News in:</label>
       <select className='filter'>
-        <option>Date</option>
+        <option>World</option>
+        <option>United States</option>
+        <option>Arts</option>
+        <option>Home</option>
+        <option>Science</option>
+        <option>All Categories</option>
       </select>
       <div className='card-container'>
         {cards}
