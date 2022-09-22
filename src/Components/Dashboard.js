@@ -5,30 +5,39 @@ import grabArticles from '../apiCalls'
 
 function Dashboard({handleChoice}) {
   const [cards, setCards] = useState([])
+  const [loading, setLoading] = useState('')
+  const [category, setCategory] = useState('world')
 
   useEffect(() => {
-    grabArticles().then(data => {setCards(data.results.map((result) => {
+    setCards([])
+    setLoading('Loading.....')
+    grabArticles(category).then(data => {setCards(data.results.map((result) => {
+      if(!result.title){
+        return
+      }
     return (<SummaryCard key={result.title}
+      category={category}
     handleChoice={handleChoice}
     title={result.title}
     url={result.multimedia[1].url}
     date={result.created_date} />)
   }))
+  setLoading('')
 })
-  },[])
+},[category])
 
   return(
     <div>
       <label>Top News in:</label>
-      <select className='filter'>
-        <option>World</option>
-        <option>United States</option>
-        <option>Arts</option>
-        <option>Home</option>
-        <option>Science</option>
-        <option>All Categories</option>
+      <select onChange={(e) => setCategory(e.target.value)}className='filter'>
+        <option value='world'>World</option>
+        <option value='us'>United States</option>
+        <option value='arts'>Arts</option>
+        <option value='home'>Home</option>
+        <option value='science'>Science</option>
       </select>
       <div className='card-container'>
+      {loading && <h1>{loading}</h1>}
         {cards}
       </div>
     </div>
