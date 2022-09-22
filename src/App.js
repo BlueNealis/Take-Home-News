@@ -9,8 +9,10 @@ function App() {
   const [detailArticle, setDetailArticle] = useState({})
 
   const handleArticleChoice = (e, category) => {
+    setDetailArticle({})
     grabArticles(category).then(data => {setDetailArticle(data.results.find((result) => {
       if(result.title === e.target.id) {
+        console.log(result, 'result')
         return result
       }
     }))
@@ -18,8 +20,8 @@ function App() {
   }
 
   return (
-    <div>
-    <h1 className='title'>Top News of Today</h1>
+    <div className='wrapper'>
+    <h1 className='main-title'>Top News of Today</h1>
     <Switch>
       <Route exact path='/'>
         <Dashboard handleChoice={handleArticleChoice}/>
