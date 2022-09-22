@@ -35,6 +35,15 @@ function Dashboard({handleChoice}) {
         <option value='arts'>Arts</option>
         <option value='home'>Home</option>
         <option value='science'>Science</option>
+        <option value='books'>Books</option>
+        <option value='movies'>Movies</option>
+        <option value='sports'>Sports</option>
+        <option value='opinion'>Opinion</option>
+        <option value='sundayreview'>Sunday Review</option>
+        <option value='arts'>Technology</option>
+        <option value='insider'>Insider</option>
+        <option value='realestate'>Real Estate</option>
+
       </select>
       <div>
       {loading && <h1>{loading}</h1>}

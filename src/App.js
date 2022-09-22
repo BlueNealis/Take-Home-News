@@ -9,8 +9,10 @@ function App() {
   const [detailArticle, setDetailArticle] = useState({})
 
   const handleArticleChoice = (e, category) => {
+    setDetailArticle({})
     grabArticles(category).then(data => {setDetailArticle(data.results.find((result) => {
       if(result.title === e.target.id) {
+        console.log(result, 'result')
         return result
       }
     }))

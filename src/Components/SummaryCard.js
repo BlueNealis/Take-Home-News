@@ -3,7 +3,7 @@ import './SummaryCard.css'
 import {Link} from 'react-router-dom'
 
 function SummaryCard({handleChoice, title, url, date, category}) {
-  console.log(date)
+  console.log(title, url, date)
   return (
   <Link to={`/details/${title}`}>
     <div onClick={(e) => handleChoice(e, category)} id={title} className='card'>
