@@ -1,28 +1,32 @@
 import SummaryCard from './SummaryCard'
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import './Dashboard.css'
 import grabArticles from '../apiCalls'
 
-function Dashboard() {
+function Dashboard({handleChoice}) {
   const [cards, setCards] = useState([])
 
   useEffect(() => {
-    let allArticles = []
-  grabArticles().then(data => {
-    setCards(data.results.map((result) => {
-      console.log(result)
+    grabArticles().then(data => {setCards(data.results.map((result) => {
     return (<SummaryCard key={result.title}
+    handleChoice={handleChoice}
     title={result.title}
     url={result.multimedia[1].url}
     date={result.created_date} />)
   }))
 })
-},[])
+  },[])
 
   return(
     <div>
+      <label>Top News in:</label>
       <select className='filter'>
-        <option>Date</option>
+        <option>World</option>
+        <option>United States</option>
+        <option>Arts</option>
+        <option>Home</option>
+        <option>Science</option>
+        <option>All Categories</option>
       </select>
       <div className='card-container'>
         {cards}

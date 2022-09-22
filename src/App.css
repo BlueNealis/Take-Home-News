@@ -6,6 +6,10 @@ html {
   text-align: center;
 }
 
+img {
+  padding: 1%;
+}
+
 a {
   text-decoration: none;
 
@@ -13,4 +17,9 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+.filter {
+  width: 10%;
+  margin:1%;
 }
