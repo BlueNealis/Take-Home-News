@@ -31,7 +31,7 @@ describe('Dashboard', () => {
     cy.get('option').within(() -> {
       cy.select('us')
       cy.intercept(`https://api.nytimes.com/svc/topstories/v2/us.json?api-key=${process.env.REACT_APP_API_KEY}`, {
-        fixture: '../fixtures/us'
+        fixture: '../fixtures/us.json'
       })
       cy.get('card').should('have.length', 3)
       cy.get('card').eq(0).within(() => {
@@ -47,10 +47,16 @@ describe('Dashboard', () => {
         cy.get('img')
       })
     })
-    
+
 
   it('Should change to a detail view when the user clicks on an article link' {
-
+    cy.get('card').eq(1).within(() => {
+      cy.get('h1').click()
+    })
+    cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
+      fixture: '..fixtures/detail.json'
+    })
+    cy.url().should('eq', '')
   })
 
   it('Should show an error message if no cards populate for a topic', {
