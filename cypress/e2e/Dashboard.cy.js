@@ -28,8 +28,26 @@ describe('Dashboard', () => {
   })
 
   it('Should allow user to select a different option of news and have it populate', {
-
-  })
+    cy.get('option').within(() -> {
+      cy.select('us')
+      cy.intercept(`https://api.nytimes.com/svc/topstories/v2/us.json?api-key=${process.env.REACT_APP_API_KEY}`, {
+        fixture: '../fixtures/us'
+      })
+      cy.get('card').should('have.length', 3)
+      cy.get('card').eq(0).within(() => {
+        cy.contains()
+        cy.get('img')
+      }
+      cy.get('card').eq(1).within(()=>{
+        cy.contains()
+        cy.get('img')
+      })
+      cy.get('card').eq(2).within(() => {
+        cy.contains()
+        cy.get('img')
+      })
+    })
+    
 
   it('Should change to a detail view when the user clicks on an article link' {
 
