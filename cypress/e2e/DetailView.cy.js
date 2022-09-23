@@ -23,9 +23,8 @@ describe('Detail View', () => {
 
   it('Should redirect to the NY times article when the user presses the button', {
     cy.get('article-container').within(() => {
-      cy.get('main-title').should('eq', 'What’s Driving the Protests in Iran?')
-      cy.get('abstract').should('eq', 'Dozens of cities have been embroiled in protests that were prompted by a young woman’s death in custody but have escalated amid anger over religious rules and a rock-bottom economy.')
-      cy.get('author').should('eq', 'By Cora Engelbrecht and Farnaz Fassihi')
+      cy.get('button').click()
+      cy.url().should('eq', 'https://www.nytimes.com/2022/09/22/world/middleeast/iran-protests.html')
     })
 
   })
