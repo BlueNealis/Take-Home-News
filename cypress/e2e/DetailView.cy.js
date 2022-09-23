@@ -30,7 +30,9 @@ describe('Detail View', () => {
   })
 
   it('Should go back to home page when the user presses Back To Main' {
-
+    cy.url().should('eq', '')
+    cy.get('redirect-main').click()
+    cy.url().should('eq', 'http://localhost:3000/')
   })
 
 })
