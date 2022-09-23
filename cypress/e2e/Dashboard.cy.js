@@ -11,7 +11,7 @@ describe('Dashboard', () => {
     cy.get('card').eq(0).within(() => {
       cy.contains('Ukraine War Comes Home to Russians as Putin Imposes Draft')
       cy.get('img')
-    }
+    })
     cy.get('card').eq(1).within(()=>{
       cy.contains('What’s Driving the Protests in Iran?')
       cy.get('img')
@@ -28,8 +28,7 @@ describe('Dashboard', () => {
   })
 
   it('Should allow user to select a different option of news and have it populate', {
-    cy.get('option').within(() -> {
-      cy.select('us')
+    cy.get('select').select('us')
       cy.intercept(`https://api.nytimes.com/svc/topstories/v2/us.json?api-key=${process.env.REACT_APP_API_KEY}`, {
         fixture: '../fixtures/us.json'
       })

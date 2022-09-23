@@ -1,0 +1,186 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2022 The New York Times Company. All Rights Reserved.",
+    "section": "U.S. News",
+    "last_updated": "2022-09-12T14:39:39-04:00",
+    "num_results": 25,
+    "results": [
+        {
+            "section": "us",
+            "subsection": "politics",
+            "title": "Election Deniers Are Pivoting to November. Can They Pull It Off?",
+            "abstract": "“Stop the Steal” Republicans hoping to win over general-election voters are going through contortions — scrubbing websites, using coded language or simply saying different things to different audiences.",
+            "url": "https://www.nytimes.com/2022/09/23/us/politics/election-deniers-trump-midterms.html",
+            "uri": "nyt://article/7250d45d-697f-5f2f-9cbe-5801fcd37967",
+            "byline": "By Jonathan Weisman",
+            "item_type": "Article",
+            "updated_date": "2022-09-23T11:19:35-04:00",
+            "created_date": "2022-09-23T10:42:44-04:00",
+            "published_date": "2022-09-23T10:42:44-04:00",
+            "material_type_facet": "",
+            "kicker": "",
+            "des_facet": [
+                "Midterm Elections (2022)",
+                "Voter Fraud (Election Fraud)",
+                "Presidential Election of 2020",
+                "United States Politics and Government",
+                "Right-Wing Extremism and Alt-Right",
+                "Elections, Senate"
+            ],
+            "org_facet": [
+                "Republican Party"
+            ],
+            "per_facet": [
+                "Bolduc, Donald C (1962- )",
+                "Masters, Blake (1986- )",
+                "Oz, Mehmet C",
+                "Smiley, Tiffany"
+            ],
+            "geo_facet": [],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/23pol-flipflop-bolduc-1-ddee/23pol-flipflop-bolduc-1-ddee-superJumbo.jpg",
+                    "format": "Super Jumbo",
+                    "height": 1365,
+                    "width": 2048,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Don Bolduc with his campaign staff during his primary night watch party. After his primary, he changed his mind on the 2020 election results he had long questioned.",
+                    "copyright": "John Tully for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/23pol-flipflop-bolduc-1-ddee/23pol-flipflop-bolduc-1-ddee-threeByTwoSmallAt2X.jpg",
+                    "format": "threeByTwoSmallAt2X",
+                    "height": 400,
+                    "width": 600,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Don Bolduc with his campaign staff during his primary night watch party. After his primary, he changed his mind on the 2020 election results he had long questioned.",
+                    "copyright": "John Tully for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/23pol-flipflop-bolduc-1-ddee/23pol-flipflop-bolduc-1-ddee-thumbLarge.jpg",
+                    "format": "Large Thumbnail",
+                    "height": 150,
+                    "width": 150,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Don Bolduc with his campaign staff during his primary night watch party. After his primary, he changed his mind on the 2020 election results he had long questioned.",
+                    "copyright": "John Tully for The New York Times"
+                }
+            ],
+            "short_url": "https://nyti.ms/3R2648R"
+        },
+        {
+            "section": "us",
+            "subsection": "",
+            "title": "7 Art Shows to See in California This Fall",
+            "abstract": "Must-see exhibits are scheduled up and down the state.",
+            "url": "https://www.nytimes.com/2022/09/23/us/fall-art-shows-california.html",
+            "uri": "nyt://article/064103c0-8b44-57e2-bf97-e5b70c219678",
+            "byline": "By Soumya Karlamangla",
+            "item_type": "Article",
+            "updated_date": "2022-09-23T09:23:27-04:00",
+            "created_date": "2022-09-23T09:00:07-04:00",
+            "published_date": "2022-09-23T09:00:07-04:00",
+            "material_type_facet": "",
+            "kicker": "California Today",
+            "des_facet": [],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [
+                "California"
+            ],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2020/04/03/reader-center/23californiatoday-art-sept/23californiatoday-art-sept-superJumbo.jpg",
+                    "format": "Super Jumbo",
+                    "height": 1364,
+                    "width": 2048,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "People at the Hammer Museum in 2020.",
+                    "copyright": "September Dawn Bottoms for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2020/04/03/reader-center/23californiatoday-art-sept/23californiatoday-art-sept-threeByTwoSmallAt2X.jpg",
+                    "format": "threeByTwoSmallAt2X",
+                    "height": 400,
+                    "width": 600,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "People at the Hammer Museum in 2020.",
+                    "copyright": "September Dawn Bottoms for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2020/04/03/reader-center/23californiatoday-art-sept/23californiatoday-art-sept-thumbLarge.jpg",
+                    "format": "Large Thumbnail",
+                    "height": 150,
+                    "width": 150,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "People at the Hammer Museum in 2020.",
+                    "copyright": "September Dawn Bottoms for The New York Times"
+                }
+            ],
+            "short_url": "https://nyti.ms/3DOWWBp"
+        },
+        {
+            "section": "briefing",
+            "subsection": "",
+            "title": "A Shift in Crime",
+            "abstract": "Murders are declining, but other crimes are still disrupting American life.",
+            "url": "https://www.nytimes.com/2022/09/23/briefing/crime-rates-murder-robberies-us.html",
+            "uri": "nyt://article/3da1f204-e342-5682-b9dc-3e5cd048e586",
+            "byline": "By German Lopez",
+            "item_type": "Article",
+            "updated_date": "2022-09-23T06:22:35-04:00",
+            "created_date": "2022-09-23T06:22:35-04:00",
+            "published_date": "2022-09-23T06:22:35-04:00",
+            "material_type_facet": "",
+            "kicker": "",
+            "des_facet": [
+                "internal-storyline-no",
+                "Murders, Attempted Murders and Homicides",
+                "Crime and Criminals",
+                "Law and Legislation",
+                "Robberies and Thefts"
+            ],
+            "org_facet": [],
+            "per_facet": [],
+            "geo_facet": [],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/-23-THE-MORNING-NL-ukz1-promo/-23-THE-MORNING-NL-ukz1-1-8a6d-superJumbo.jpg",
+                    "format": "Super Jumbo",
+                    "height": 1365,
+                    "width": 2048,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "New York will install two security cameras on every subway car.",
+                    "copyright": "Karsten Moran for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/-23-THE-MORNING-NL-ukz1-promo/-23-THE-MORNING-NL-ukz1-1-8a6d-threeByTwoSmallAt2X.jpg",
+                    "format": "threeByTwoSmallAt2X",
+                    "height": 400,
+                    "width": 600,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "New York will install two security cameras on every subway car.",
+                    "copyright": "Karsten Moran for The New York Times"
+                },
+                {
+                    "url": "https://static01.nyt.com/images/2022/09/23/multimedia/-23-THE-MORNING-NL-ukz1-promo/-23-THE-MORNING-NL-ukz1-1-8a6d-thumbLarge.jpg",
+                    "format": "Large Thumbnail",
+                    "height": 150,
+                    "width": 150,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "New York will install two security cameras on every subway car.",
+                    "copyright": "Karsten Moran for The New York Times"
+                }
+            ],
+            "short_url": "https://nyti.ms/3DPFjS8"
+        }]
+      }
