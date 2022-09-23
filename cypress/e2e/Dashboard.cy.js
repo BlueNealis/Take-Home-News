@@ -53,7 +53,7 @@ describe('Dashboard', () => {
       cy.get('h1').click()
     })
     cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
-      fixture: '..fixtures/detail.json'
+      fixture: '../fixtures/detail.json'
     })
     cy.url().should('eq', '')
   })
