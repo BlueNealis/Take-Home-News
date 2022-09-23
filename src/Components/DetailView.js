@@ -10,8 +10,8 @@ function DetailView({articleInfo}) {
       <img src={articleInfo.multimedia[1].url} alt={articleInfo.multimedia[1].caption}/>
       <div className='article-grab'>
         <h1 className='title'>{articleInfo.title}</h1>
-        <p>{articleInfo.abstract}</p>
-        <p>{articleInfo.byline}</p>
+        <p className='abstract'>{articleInfo.abstract}</p>
+        <p className='author'>{articleInfo.byline}</p>
         <a href={articleInfo.url}>
           <button>Read This Article</button>
         </a>
