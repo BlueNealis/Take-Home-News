@@ -34,6 +34,8 @@ Top News Today
 ![Back](BackToMain.gif)
 - User can select different type of news topics
 ![Selection](ChangeSelection.gif)
+- 100% Accessibility on lighthouse
+![Lighthouse](Lighthouse.png)
 
 ### Contributors
 
