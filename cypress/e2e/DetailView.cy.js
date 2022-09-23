@@ -1,5 +1,21 @@
-describe('empty spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('Detail View', () => {
+  beforeEach('Go to Dashboard', () => {
+    cy.visit('http://localhost:3000/')
+    cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
+      fixture: '../fixtures/worldNYT.json'
+    })
   })
+
+  it('Should details of the detail view the user pressed', () => {
+
+  })
+
+  it('Should redirect to the NY times article when the user presses the button', {
+
+  })
+
+  it('Should go back to home page when the user presses Back To Main' {
+
+  })
+
 })
