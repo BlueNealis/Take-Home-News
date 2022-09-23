@@ -60,7 +60,12 @@ describe('Dashboard', () => {
   })
 
   it('Should show an error message if no cards populate for a topic', {
-
+    cy.get('card').eq(0).within(() => {
+      cy.get('h1').click()
+    })
+    cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
+      statusCode: 500
+    })
   })
 
 })
