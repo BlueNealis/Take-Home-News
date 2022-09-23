@@ -4,6 +4,12 @@ describe('Detail View', () => {
     cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
       fixture: '../fixtures/worldNYT.json'
     })
+    cy.get('card').eq(1).within(() => {
+      cy.get('h1').click()
+    })
+    cy.intercept(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${process.env.REACT_APP_API_KEY}`, {
+      fixture: '../fixtures/detail'
+    })
   })
 
   it('Should details of the detail view the user pressed', () => {

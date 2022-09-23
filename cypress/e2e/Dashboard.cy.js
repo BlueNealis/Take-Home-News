@@ -48,7 +48,6 @@ describe('Dashboard', () => {
       })
     })
 
-
   it('Should change to a detail view when the user clicks on an article link' {
     cy.get('card').eq(1).within(() => {
       cy.get('h1').click()
