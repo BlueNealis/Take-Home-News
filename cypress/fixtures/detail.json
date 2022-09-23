@@ -1,0 +1,68 @@
+{
+  [
+    {
+        "section": "world",
+        "subsection": "middleeast",
+        "title": "What’s Driving the Protests in Iran?",
+        "abstract": "Dozens of cities have been embroiled in protests that were prompted by a young woman’s death in custody but have escalated amid anger over religious rules and a rock-bottom economy.",
+        "url": "https://www.nytimes.com/2022/09/22/world/middleeast/iran-protests.html",
+        "uri": "nyt://article/fe5f0b14-ee12-555e-9fbb-5bf504d281ed",
+        "byline": "By Cora Engelbrecht and Farnaz Fassihi",
+        "item_type": "Article",
+        "updated_date": "2022-09-22T18:33:02-04:00",
+        "created_date": "2022-09-22T12:44:51-04:00",
+        "published_date": "2022-09-22T12:44:51-04:00",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": [
+            "Demonstrations, Protests and Riots",
+            "Muslim Veiling",
+            "Women and Girls",
+            "Deaths (Fatalities)"
+        ],
+        "org_facet": [
+            "Basij",
+            "Islamic Revolutionary Guards Corps"
+        ],
+        "per_facet": [
+            "Khamenei, Ali"
+        ],
+        "geo_facet": [
+            "Iran"
+        ],
+        "multimedia": [
+            {
+                "url": "https://static01.nyt.com/images/2022/09/22/world/xxiran-protest-explainer/merlin_213594909_b622e093-30f1-4eb4-a1c1-999fffbdae7a-superJumbo.jpg",
+                "format": "Super Jumbo",
+                "height": 720,
+                "width": 1080,
+                "type": "image",
+                "subtype": "photo",
+                "caption": "Protesters in the streets of Tehran on Wednesday. The protests have grown to encapsulate a wide range of grievances against the government.",
+                "copyright": "Agence France-Presse — Getty Images"
+            },
+            {
+                "url": "https://static01.nyt.com/images/2022/09/22/world/xxiran-protest-explainer/merlin_213594909_b622e093-30f1-4eb4-a1c1-999fffbdae7a-threeByTwoSmallAt2X.jpg",
+                "format": "threeByTwoSmallAt2X",
+                "height": 400,
+                "width": 600,
+                "type": "image",
+                "subtype": "photo",
+                "caption": "Protesters in the streets of Tehran on Wednesday. The protests have grown to encapsulate a wide range of grievances against the government.",
+                "copyright": "Agence France-Presse — Getty Images"
+            },
+            {
+                "url": "https://static01.nyt.com/images/2022/09/22/world/xxiran-protest-explainer/merlin_213594909_b622e093-30f1-4eb4-a1c1-999fffbdae7a-thumbLarge.jpg",
+                "format": "Large Thumbnail",
+                "height": 150,
+                "width": 150,
+                "type": "image",
+                "subtype": "photo",
+                "caption": "Protesters in the streets of Tehran on Wednesday. The protests have grown to encapsulate a wide range of grievances against the government.",
+                "copyright": "Agence France-Presse — Getty Images"
+            }
+        ],
+        "short_url": "https://nyti.ms/3BCattj"
+    }
+  ]
+}
